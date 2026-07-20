@@ -1682,7 +1682,7 @@
 
                     {/* Audio Player - Always Mounted */}
                     <audio ref={audioRef} loop>
-                        <source src="./videos/background_music.mp4" type="video/mp4" />
+                        <source src="/videos/background_music.mp4" type="video/mp4" />
                     </audio>
 
                     {/* Audio Toggle Button - Always Visible */}
@@ -1724,7 +1724,7 @@
                                 <div className="mb-8 relative">
                                     <div className="absolute -inset-4 bg-[#830b9d]/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                                     <div className="relative inline-block mb-4">
-                                        <img src="./images/mem1.jpeg" alt="Profile" className="w-24 h-24 rounded-full object-cover border-4 border-[rgb(196,13,116)] shadow-[0_0_20px_rgba(196,13,116,0.4)] animate-pulse" />
+                                        <img src="/images/mem1.jpeg" alt="Profile" className="w-24 h-24 rounded-full object-cover border-4 border-[rgb(196,13,116)] shadow-[0_0_20px_rgba(196,13,116,0.4)] animate-pulse" />
                                     </div>
                                     <h1 className="text-4xl font-bold text-white tracking-tight">{t.login.title}</h1>
                                     <p className="text-white/40 text-sm mt-2 uppercase tracking-[0.2em] font-light">The Sacred Vault</p>
@@ -1928,8 +1928,8 @@
                                             </div>
                                             <div className="w-11/12 md:w-5/12 pl-6 md:pl-0 text-right">
                                                 <div className="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-2xl shadow-xl border border-white/5 hover:bg-white/20 transition-all duration-300 group transform hover:scale-105">
-                                                    <div className="relative overflow-hidden rounded-xl mb-4 aspect-square md:aspect-[4/5] w-full border border-pink-500/30 cursor-pointer group-hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] transition-shadow duration-300 bg-black/20" onClick={() => setSelectedImage(`./images/mem${i + 1}.jpeg`)}>
-                                                        <img src={`./images/mem${i + 1}.jpeg`} alt="Memory" className="parallax-img w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105 will-change-transform" />
+                                                    <div className="relative overflow-hidden rounded-xl mb-4 aspect-square md:aspect-[4/5] w-full border border-pink-500/30 cursor-pointer group-hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] transition-shadow duration-300 bg-black/20" onClick={() => setSelectedImage(`/images/mem${i + 1}.jpeg`)}>
+                                                        <img src={`/images/mem${i + 1}.jpeg`} alt="Memory" className="parallax-img w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-105 will-change-transform" />
                                                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                                                     </div>
                                                     <h3 className="text-xl font-bold text-rose-100 group-hover:text-[rgb(196,13,116)] transition-colors mb-2 flex items-center gap-2">
@@ -1974,7 +1974,7 @@
                                                     }
                                                 }}
                                             >
-                                                <source src="./videos/love_video.mp4" type="video/mp4" />
+                                                <source src="/videos/love_video.mp4" type="video/mp4" />
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
