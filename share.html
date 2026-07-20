@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💕 لحبيبتي روضة 💕</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0015 0%, #1a0030 30%, #2d0050 60%, #0a0015 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
+  }
+  .stars {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.15;
+    animation: twinkle 3s ease-in-out infinite alternate;
+  }
+  @keyframes twinkle { from { opacity: 0.1; } to { opacity: 0.3; } }
+
+  .card {
+    position: relative; z-index: 10;
+    background: rgba(20, 0, 40, 0.85);
+    border: 2px solid rgba(196, 13, 116, 0.5);
+    border-radius: 24px;
+    padding: 40px 30px;
+    max-width: 420px; width: 90%;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(196, 13, 116, 0.3), inset 0 0 30px rgba(196, 13, 116, 0.05);
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .heart-top { font-size: 40px; margin-bottom: 10px; animation: heartbeat 1.2s ease-in-out infinite; }
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+
+  .names {
+    font-family: 'Amiri', serif;
+    font-size: 28px; font-weight: 700;
+    background: linear-gradient(90deg, #c40d74, #ff69b4, #c40d74);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+
+  .message {
+    font-family: 'Amiri', serif;
+    font-size: 18px; line-height: 2;
+    color: #e8c8f0;
+    margin-bottom: 20px;
+  }
+  .message em { color: #ff69b4; font-style: normal; }
+
+  .photo-frame {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgba(196, 13, 116, 0.6);
+    overflow: hidden;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 25px rgba(196, 13, 116, 0.4);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from { box-shadow: 0 0 20px rgba(196, 13, 116, 0.3); }
+    to { box-shadow: 0 0 35px rgba(196, 13, 116, 0.6); }
+  }
+  .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+  .link-section {
+    background: linear-gradient(135deg, rgba(196, 13, 116, 0.2), rgba(130, 10, 160, 0.2));
+    border: 1px solid rgba(196, 13, 116, 0.4);
+    border-radius: 16px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  .link-label {
+    font-size: 13px; color: #c090d0;
+    margin-bottom: 8px;
+  }
+  .link-url {
+    font-size: 16px; font-weight: 700;
+    color: #ff69b4;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 30px;
+    transition: all 0.3s;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  .link-url:hover {
+    background: rgba(255, 105, 180, 0.2);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+    transform: scale(1.05);
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.2); }
+    50% { box-shadow: 0 0 25px rgba(255, 105, 180, 0.5); }
+  }
+
+  .footer { font-size: 14px; color: #8a6a9a; margin-top: 10px; }
+  .footer span { color: #c40d74; }
+
+  .hearts-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+  .floating-heart {
+    position: absolute; font-size: 20px;
+    animation: rise linear infinite;
+    opacity: 0.4;
+  }
+  @keyframes rise {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="hearts-bg">
+  <div class="floating-heart" style="left:10%; animation-duration:8s; animation-delay:0s;">💜</div>
+  <div class="floating-heart" style="left:25%; animation-duration:10s; animation-delay:2s;">💕</div>
+  <div class="floating-heart" style="left:40%; animation-duration:7s; animation-delay:1s;">💗</div>
+  <div class="floating-heart" style="left:60%; animation-duration:9s; animation-delay:3s;">💜</div>
+  <div class="floating-heart" style="left:75%; animation-duration:11s; animation-delay:0.5s;">💕</div>
+  <div class="floating-heart" style="left:90%; animation-duration:8s; animation-delay:2.5s;">💗</div>
+</div>
+
+<div class="card">
+  <div class="heart-top">💜</div>
+  <div class="names">روضة & مصطفى</div>
+
+  <div class="photo-frame">
+    <img src="https://rawda-mostafa.vercel.app/images/mem1.jpeg" alt="روضة 💜" onerror="this.style.display='none'" />
+  </div>
+
+  <div class="message">
+    حبيبتي <em>روضتي</em>...<br>
+    عملتلك حاجة من قلبي...<br>
+    كل كلمة فيها بحبّك...<br>
+    افتحيها وحاسّي بيا 💕
+  </div>
+
+  <div class="link-section">
+    <div class="link-label">✨ اضغطي هنا يا حبيبتي ✨</div>
+    <a href="https://rawda-mostafa.vercel.app/" target="_blank" class="link-url">
+      💕 فتح المفاجأة 💕
+    </a>
+  </div>
+
+  <div class="footer">
+    بحبك <span>للابد</span> 💜<br>
+    <small>مصطفى 🌙</small>
+  </div>
+</div>
+
+</body>
+</html>
