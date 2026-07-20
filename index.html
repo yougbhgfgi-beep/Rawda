@@ -1771,12 +1771,12 @@
                     ) : (
                         <div className="relative z-10">
                             {/* Sticky Navigation */}
-                            <nav className="fixed top-0 left-0 right-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/10 px-4 py-2 md:py-3 flex flex-col items-center gap-1 md:gap-2 transition-all">
-                                <div className="text-xl md:text-2xl font-bold font-script text-[rgb(196,13,116)]">روضة و مصطفى</div>
-                                <div className="flex gap-4 text-[9px] xs:text-[11px] sm:text-xs md:text-sm tracking-tight sm:gap-6 uppercase font-premium">
+                            <nav className="fixed top-0 left-0 right-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/10 px-4 py-2 md:py-3 flex flex-row items-center justify-between transition-all">
+                                <div className="text-sm md:text-2xl font-bold font-script text-[rgb(196,13,116)] whitespace-nowrap">روضة & مصطفى 💜</div>
+                                <div className="flex gap-3 md:gap-6 text-[9px] xs:text-[11px] sm:text-xs md:text-sm tracking-tight uppercase font-premium">
                                     <a href="#timeline" className="hover:text-[rgb(196,13,116)] transition-colors whitespace-nowrap">{t.nav.memories}</a>
-                                    <a href="#video" className="hover:text-[rgb(196,13,116)] transition-colors">{t.nav.video}</a>
-                                    <a href="#reasons" className="hover:text-[rgb(196,13,116)] transition-colors">{t.nav.why}</a>
+                                    <a href="#video" className="hover:text-[rgb(196,13,116)] transition-colors whitespace-nowrap">{t.nav.video}</a>
+                                    <a href="#reasons" className="hover:text-[rgb(196,13,116)] transition-colors whitespace-nowrap">{t.nav.why}</a>
                                 </div>
                             </nav>
 
@@ -1811,7 +1811,7 @@
                                 <section className="min-h-screen flex flex-col items-center justify-center text-center p-4 relative overflow-hidden">
                                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#830b9d]/20 to-transparent -z-10"></div>
 
-                                    <h1 className="text-6xl md:text-8xl font-serif font-black mb-6 leading-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] text-white">
+                                    <h1 className="text-4xl xs:text-5xl md:text-8xl font-serif font-black mb-6 leading-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] text-white whitespace-nowrap">
                                         روضة <span className="text-[rgb(196,13,116)] italic">&</span> مصطفى
                                     </h1>
                                     <p className="text-base xs:text-lg md:text-3xl text-gray-300 mb-8 md:mb-10 font-light px-6">{t.hero.subtitle}</p>
